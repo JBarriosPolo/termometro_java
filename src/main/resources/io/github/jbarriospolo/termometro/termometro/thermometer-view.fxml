@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.jbarriospolo.termometro.termometro.ThermometerController">
+<!--   <bottom>-->
+<!--      <Button mnemonicParsing="false" onAction="#updateTemperature" text="de c a f" BorderPane.alignment="CENTER" />-->
+<!--   </bottom>-->
+   <center>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="127.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="inputCelsius" alignment="CENTER" />
+            <Label fx:id="resultText" text="Label" />
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ProgressBar id="red-bar" fx:id="temperaturaBarHot" layoutY="17.0" prefWidth="200.0" progress="0.0" rotate="270.0" />
+                  <ProgressBar fx:id="temperaturaBarCool" layoutX="-1.0" layoutY="214.0" prefWidth="200.0" progress="0.0" rotate="90.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,7 @@
+.red-bar .progress-bar {
+    -fx-accent: red;
+}
+
+.red-bar .bar {
+    -fx-accent: red;
+}
